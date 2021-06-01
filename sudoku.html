@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="board.css">
+</head>
+
+<body>
+    <script src="SudokuClient.js"></script>
+    <script src="SudokuOOP.js"></script>
+    <h1>Sudoku</h1>
+    <table id="board">
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+        <tr>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+            <td class="box"></td>
+        </tr>
+    </table>
+    <script>
+        randomBoard();
+    </script>
+    <div class="center">
+        <input class="button button1" onclick="solveBoard()" value="Show Solution">
+        <input class="button button2" onclick="resetBoard()" value="Reset Board">
+        <input class="button button3" onclick="checkErrors()" value="Check Errors">
+        <input class="button button4" onclick="randomBoard()" value="New Game">
+    </div>
+    <p id="output" class="center2"></p>
+</body>
+
+</html>
